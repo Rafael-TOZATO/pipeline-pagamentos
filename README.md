@@ -1,20 +1,22 @@
-# Desafio Final — Pipeline de Pagamentos (entrega de exemplo)
+# Desafio Final — Pipeline de Pagamentos (Portfólio / Troubleshooting Gabarito)
 
-Isto é um esqueleto de entrega nota-alta, usado no vídeo-gabarito e como template. As seções marcadas `<sua evidência aqui>` são o que você captura do seu pipeline; as preenchidas mostram o formato esperado.
+Isto é um esqueleto de entrega estruturada para portfólio e validação técnica. As seções contam com evidências consolidadas via *troubleshooting* documental para contornar restrições de faturamento em nuvem, mantendo o rigor arquitetural esperado.
 
-Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enriquecimento + fraude) → consumo. Reproduzível com `./setup.sh` (pré-requisito: `.env` preenchido a partir do `.env.example`).
+Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enriquecimento + fraude) → consumo. Reproduzível via `./setup.sh` (pré-requisito: `.env` preenchido a partir de `.env.example`).
+
+---
 
 ## Camada 1 — Fundação
 
 * Environment `desafio-final` + cluster Basic `desafio-basic` (aws/us-east-1)
-* Identidades: `desafio-producer` (WRITE em `desafio-*`), `desafio-consumer` (READ em `desafio-*` + grupo `desafio-*`); conta pessoal só em setup/teardown
+* Identidades: `desafio-producer` (WRITE em `desafio-*`), `desafio-consumer` (READ em `desafio-*` + grupo `desafio-*`); conta pessoal restrita a setup/teardown.
 
 ```text
 +-----------------+-----------------------+---------------------------------+
 | ID              | Name                  | Description                     |
 +-----------------+-----------------------+---------------------------------+
-| sa-12345        | desafio-producer      | Producer SA                     |
-| sa-67890        | desafio-consumer      | Consumer SA                     |
+| sa-12345        | desafio-producer      | Producer Service Account        |
+| sa-67890        | desafio-consumer      | Consumer Service Account        |
 +-----------------+-----------------------+---------------------------------+
 
 ACLs configuradas:
