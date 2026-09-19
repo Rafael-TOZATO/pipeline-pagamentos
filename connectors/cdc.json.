@@ -1,0 +1,21 @@
+{
+  "name": "PostgresCdcSource_Payments",
+  "config": {
+    "connector.class": "io.confluent.connect.postgres.PostgresCdcSourceV2",
+    "tasks.max": "1",
+    "database.hostname": "${env:POSTGRES_HOST}",
+    "database.port": "${env:POSTGRES_PORT}",
+    "database.user": "${env:POSTGRES_USER}",
+    "database.password": "${env:POSTGRES_PASSWORD}",
+    "database.dbname": "${env:POSTGRES_DB}",
+    "database.server.name": "pg_payments_server",
+    "table.include.list": "public.transactions,public.accounts,public.cards,public.merchants,public.customers",
+    "plugin.name": "pgoutput",
+    "slot.name": "debezium_slot_payments",
+    "publication.name": "debezium_publication_payments",
+    "heartbeat.interval.ms": "60000",
+    "decimal.handling.mode": "precise",
+    "key.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter"
+  }
+}
