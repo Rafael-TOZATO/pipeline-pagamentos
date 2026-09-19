@@ -9,13 +9,16 @@
     "database.password": "${env:POSTGRES_PASSWORD}",
     "database.dbname": "${env:POSTGRES_DB}",
     "database.server.name": "pg_payments_server",
-    "table.include.list": "public.transactions,public.accounts,public.cards,public.merchants,public.customers",
+    "table.include.list": "transações,contas,cartões,comerciantes,clientes",
     "plugin.name": "pgoutput",
     "slot.name": "debezium_slot_payments",
     "publication.name": "debezium_publication_payments",
     "heartbeat.interval.ms": "60000",
     "decimal.handling.mode": "precise",
     "key.converter": "io.confluent.connect.avro.AvroConverter",
-    "value.converter": "io.confluent.connect.avro.AvroConverter"
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "errors.tolerance": "all",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true"
   }
 }
