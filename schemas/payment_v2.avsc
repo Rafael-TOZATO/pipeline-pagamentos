@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "PaymentEvent",
+  "namespace": "com.bootcamp.payments.v2",
+  "fields": [
+    {"name": "tx_id", "type": "string"},
+    {"name": "account_id", "type": "string"},
+    {"name": "card_id", "type": "string"},
+    {
+      "name": "amount",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 15,
+        "scale": 2
+      },
+      "doc": "Money value stored as bytes decimal",
+      "connect.parameters": {"scale": "2", "connect.decimal.precision": "15"}
+    },
+    {"name": "currency", "type": "string", "default": "BRL"},
+    {"name": "merchant_id", "type": "string"},
+    {"name": "timestamp", "type": "string"},
+    {"name": "status", "type": "string", "default": "PENDING"}
+  ]
+}
