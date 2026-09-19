@@ -1,5 +1,7 @@
 # Desafio Final — Pipeline de Pagamentos
 
+[![Confluent Cloud Security & Compliance](https://img.shields.io/badge/Confluent_Cloud-Security_%26_Compliance-blue?style=for-the-badge&logo=confluent&logoColor=white)](https://confluent.cloud)
+
 Pipeline em tempo real de ponta a ponta: Neon (Postgres) $\rightarrow$ CDC Debezium $\rightarrow$ Tópicos Avro $\rightarrow$ Flink SQL (Enriquecimento + Fraude) $\rightarrow$ Consumo. Reprodutível via `./setup.sh` (pré-requisito: `.env` preenchido a partir do `.env.example`).
 
 ---
