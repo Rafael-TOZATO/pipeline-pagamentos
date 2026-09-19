@@ -1,0 +1,35 @@
+SET 'sql.tables.scan.idle-timeout' = '5s';
+
+CREATE TABLE transactions_enriched AS
+SELECT 
+    t.tx_id,
+    t.account_id,
+    t.card_id,
+    t.amount,
+    t.timestamp AS tx_timestamp,
+    c.account_status,
+    c.risk_score
+FROM transactions AS t
+JOIN accounts FOR SYSTEM_TIME AS OF t.proctime AS c
+  ON t.account_id = c.account_id;
+
+INSERT INTO desafio_fraud_detected
+SELECT 
+    card_id,
+    'RULE_VELOCITY' AS detection_rule,
+    60 AS window_interval_seconds,
+    ARRAY_AGG(tx_id) AS triggering_transactions,
+    CURRENT_TIMESTAMP AS alert_timestamp
+FROM transactions_enriched
+MATCH_RECOGNIZE (
+    PARTITION BY card_id
+    ORDER BY tx_timestamp
+    MEASURES
+        T3.tx_id AS last_tx_id
+    AFTER MATCH SKIP TO NEXT ROW
+    PATTERN (T1 T2 T3+)
+    DEFINE 
+        T1 AS TRUE,
+        T2 = T2.tx_timestamp >= T1.tx_timestamp AND T2.tx_timestamp <= T1.tx_timestamp + INTERVAL '60' SECOND,
+        T3 = T3.tx_timestamp >= T1.tx_timestamp AND T3.tx_timestamp <= T1.tx_timestamp + INTERVAL '60' SECOND
+);
