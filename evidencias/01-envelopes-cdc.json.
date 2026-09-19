@@ -1,56 +1,42 @@
 {
-  "op_insert": {
-    "op": "c",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "type": "struct",
+        "fields": [
+          {"type": "string", "optional": false, "field": "tx_id"},
+          {"type": "string", "optional": false, "field": "account_id"},
+          {"type": "bytes", "optional": false, "field": "amount"},
+          {"type": "string", "optional": false, "field": "status"}
+        ],
+        "optional": true,
+        "field": "before"
+      },
+      {
+        "type": "struct",
+        "fields": [
+          {"type": "string", "optional": false, "field": "tx_id"},
+          {"type": "string", "optional": false, "field": "account_id"},
+          {"type": "bytes", "optional": false, "field": "amount"},
+          {"type": "string", "optional": false, "field": "status"}
+        ],
+        "optional": true,
+        "field": "after"
+      },
+      {"type": "string", "optional": false, "field": "op"}
+    ],
+    "optional": false,
+    "name": "com.bootcamp.payments.Envelope"
+  },
+  "payload": {
     "before": null,
     "after": {
-      "tx_id": "tx_1001",
-      "account_id": "acc_999",
-      "card_id": "card_xyz_789",
-      "amount": 1500.00,
-      "currency": "BRL",
-      "merchant_id": "m_01",
-      "timestamp": "2026-09-19T03:10:00Z",
+      "tx_id": "TX-998877",
+      "account_id": "ACC-443322",
+      "amount": "1500.00",
       "status": "APPROVED"
     },
-    "source": {
-      "version": "2.4.0",
-      "connector": "postgresql",
-      "name": "pg_payments_server",
-      "db": "neondb",
-      "schema": "public",
-      "table": "transactions",
-      "ts_ms": 1758251400000
-    }
-  },
-  "op_update": {
-    "op": "u",
-    "before": {
-      "tx_id": "tx_1001",
-      "status": "PENDING"
-    },
-    "after": {
-      "tx_id": "tx_1001",
-      "status": "APPROVED"
-    },
-    "source": {
-      "version": "2.4.0",
-      "connector": "postgresql",
-      "name": "pg_payments_server",
-      "table": "transactions"
-    }
-  },
-  "op_delete": {
-    "op": "d",
-    "before": {
-      "tx_id": "tx_1000",
-      "status": "CANCELLED"
-    },
-    "after": null,
-    "source": {
-      "version": "2.4.0",
-      "connector": "postgresql",
-      "name": "pg_payments_server",
-      "table": "transactions"
-    }
+    "op": "c"
   }
 }
