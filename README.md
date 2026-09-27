@@ -1,13 +1,13 @@
 <p align="center">
+  <img src="banner-pipeline-pagamentos.png" alt="Banner do Projeto Pipeline de Pagamentos Real-Time" width="100%">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Status-Ativo-success?style=for-the-badge&logo=git" alt="Status">
   <img src="https://img.shields.io/badge/Licença-MIT-purple?style=for-the-badge&logo=opensourceinitiative" alt="Licença">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Apache_Kafka-Confluent-orange?style=for-the-badge&logo=apachekafka" alt="Kafka">
   <img src="https://img.shields.io/badge/PostgreSQL-Neon-lightblue?style=for-the-badge&logo=postgresql" alt="PostgreSQL">
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=120&section=header&text=Pipeline%20de%20Pagamentos%20Real-Time&fontSize=24&animation=fadeIn&fontColor=fff" alt="Banner do Projeto" width="100%">
 </p>
 
 # Desafio Final — Pipeline de Pagamentos (Portfólio / Troubleshooting Gabarito)
