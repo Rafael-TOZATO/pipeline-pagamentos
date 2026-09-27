@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2k60m54711R41a_pUa7lqg.gif" alt="Pipeline Architecture Animation" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=120&section=header&text=Pipeline%20de%20Pagamentos%20Real-Time&fontSize=24&animation=fadeIn&fontColor=fff" alt="Banner do Projeto" width="100%">
 </p>
 
 # Desafio Final — Pipeline de Pagamentos (Portfólio / Troubleshooting Gabarito)
