@@ -6,12 +6,9 @@
   <img src="https://img.shields.io/badge/PostgreSQL-Neon-lightblue?style=for-the-badge&logo=postgresql" alt="PostgreSQL">
 </p>
 
-<div align="center">
-  <video width="100%" autoplay loop muted playsinline>
-    <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-and-code-31938-large.mp4" type="video/mp4">
-    Seu navegador não suporta tags de vídeo.
-  </video>
-</div>
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2k60m54711R41a_pUa7lqg.gif" alt="Pipeline Architecture Animation" width="100%">
+</p>
 
 # Desafio Final — Pipeline de Pagamentos (Portfólio / Troubleshooting Gabarito)
 
