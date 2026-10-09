@@ -24,6 +24,13 @@ Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enri
 * Identidades: `desafio-producer` (WRITE em `desafio-*`), `desafio-consumer` (READ em `desafio-*` + grupo `desafio-*`); conta pessoal restrita a setup/teardown.
 
 ```text
+
+## Contato
+
+- LinkedIn: [linkedin.com/in/rafael-tozato](https://linkedin.com/in/rafael-tozato)
+- GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+- Medium: [medium.com/@rafael.tozato](https://medium.com/@rafael.tozato)
+- Aurora BI: [aurora-bi-dio.lovable.app](https://aurora-bi-dio.lovable.app)
 +-----------------+-----------------------+---------------------------------+
 | ID              | Name                  | Description                     |
 +-----------------+-----------------------+---------------------------------+
