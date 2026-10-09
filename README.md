@@ -25,12 +25,6 @@ Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enri
 
 ```text
 
-## Contato
-
-- LinkedIn: [linkedin.com/in/rafael-tozato](https://linkedin.com/in/rafael-tozato)
-- GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-- Medium: [medium.com/@rafael.tozato](https://medium.com/@rafael.tozato)
-- Aurora BI: [aurora-bi-dio.lovable.app](https://aurora-bi-dio.lovable.app)
 +-----------------+-----------------------+---------------------------------+
 | ID              | Name                  | Description                     |
 +-----------------+-----------------------+---------------------------------+
@@ -41,3 +35,10 @@ Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enri
 ACLs configuradas:
 - Service Account sa-12345 (Producer): WRITE no prefixo 'desafio-'
 - Service Account sa-67890 (Consumer): READ no prefixo 'desafio-' e GROUP 'desafio-'
+
+## Contato
+
+- LinkedIn: [linkedin.com/in/rafael-tozato](https://linkedin.com/in/rafael-tozato)
+- GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+- Medium: [medium.com/@rafael.tozato](https://medium.com/@rafael.tozato)
+- Aurora BI: [aurora-bi-dio.lovable.app](https://aurora-bi-dio.lovable.app)
