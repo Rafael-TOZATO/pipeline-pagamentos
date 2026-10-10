@@ -23,22 +23,12 @@ Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enri
 * Environment `desafio-final` + cluster Basic `desafio-basic` (aws/us-east-1)
 * Identidades: `desafio-producer` (WRITE em `desafio-*`), `desafio-consumer` (READ em `desafio-*` + grupo `desafio-*`); conta pessoal restrita a setup/teardown.
 
-```text
+---
 
-+-----------------+-----------------------+---------------------------------+
-| ID              | Name                  | Description                     |
-+-----------------+-----------------------+---------------------------------+
-| sa-12345        | desafio-producer      | Producer Service Account        |
-| sa-67890        | desafio-consumer      | Consumer Service Account        |
-+-----------------+-----------------------+---------------------------------+
+## 📬 Contatos
 
-ACLs configuradas:
-- Service Account sa-12345 (Producer): WRITE no prefixo 'desafio-'
-- Service Account sa-67890 (Consumer): READ no prefixo 'desafio-' e GROUP 'desafio-'
-
-## Contato
-
-- LinkedIn: [linkedin.com/in/rafael-tozato](https://linkedin.com/in/rafael-tozato)
-- GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-- Medium: [medium.com/@rafael.tozato](https://medium.com/@rafael.tozato)
-- Aurora BI: [aurora-bi-dio.lovable.app](https://aurora-bi-dio.lovable.app)
+- 💼 **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
+- 🐙 **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+- ✍️ **Medium:** [@ornelas.tozato](https://medium.com/@ornelas.tozato)
+- 🌐 **Portfólio PWA:** [tozato-dev-hub.vercel.app](https://tozato-dev-hub.vercel.app)
+- 🚀 **Aurora BI (Lovable):** [aurora-bi-dio.lovable.app](https://aurora-bi-dio.lovable.app)
