@@ -35,20 +35,23 @@ As verificações locais executadas foram `bash -n`, ShellCheck e parsing JSON c
 
 ---
 
+**Rafael Ornelas Tozato**
+
+Engenharia Química | Garantia da Qualidade | Governança 4.0
+
 ## 📬 CONTATOS E PERFIS
 
 💻 **PROJETOS E PORTFÓLIOS**
-* App Ecosystem / Dev Hub: [https://tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
-* H-Folio Professional: [https://h-folio-I0.vercel.app](https://h-folio-I0.vercel.app)
+* Ecossistema de Aplicativos: [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+* H-Folio Professional: [h-folio-I0.vercel.app](https://h-folio-I0.vercel.app)
 
 🐙 **CÓDIGOS E REPOSITÓRIOS**
-* GitHub: [https://github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+* GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
 
 ✍️ **ARTIGOS E PUBLICAÇÕES**
-* Medium: [https://medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
-* Comunidade DEV: [https://dev.to/rafaeltozato](https://dev.to/rafaeltozato)
+* Medium: [medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
+* Comunidade DEV: [dev.to/rafaeltozato](https://dev.to/rafaeltozato)
 
 💼 **CONTATO**
-* LinkedIn: [https://www.linkedin.com/in/rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
-* E-mail: [ornelas.tozato@gmail.com](mailto:ornelas.tozato@gmail.com)
-* Microsoft Learn: [https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
+* LinkedIn: [linkedin.com/in/rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
+* E-mail: ornelas.tozato@gmail.com
