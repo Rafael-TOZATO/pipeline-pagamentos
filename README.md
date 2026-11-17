@@ -20,8 +20,6 @@ Isto é um esqueleto de entrega estruturada para portfólio e validação técni
 
 Pipeline: Neon (Postgres) → CDC Debezium → tópicos Avro → Flink SQL (enriquecimento + fraude) → consumo. Reproduzível via `./setup.sh` (pré-requisito: `.env` preenchido a partir do `.env.example`).
 
----
-
 ## Qualidade e Governança
 
 O workflow **Quality Gate** roda em *push* e *pull request* para `main` (e manualmente), verifica segredos expostos com Gitleaks, valida a sintaxe dos scripts Bash, aplica ShellCheck e valida a sintaxe JSON dos conectores, evidências e schemas Avro. O aviso ShellCheck SC1091 é excluído porque `.env` é um arquivo local, criado pelo usuário e não versionado. O Dependabot está habilitado para propor atualizações semanais das GitHub Actions; não há manifesto de dependências de aplicação neste repositório.
@@ -30,8 +28,6 @@ Na revisão estática inicial, `setup.sh` usava IDs de service accounts fixos em
 
 As verificações locais executadas foram `bash -n`, ShellCheck e parsing JSON com `jq`; todas passaram após os ajustes. **Limitação:** a auditoria especializada de segurança não foi concluída nesta execução; portanto, não é possível afirmar que nenhum outro bug ou vulnerabilidade exista. O Quality Gate cobre verificações estáticas de sintaxe e lint, não testes de integração contra serviços cloud nem validação semântica/compatibilidade dos schemas e SQL.
 
----
-
 ## Camada 1 — Fundação
 
 * Environment `desafio-final` + cluster Basic `desafio-basic` (aws/us-east-1)
@@ -39,21 +35,20 @@ As verificações locais executadas foram `bash -n`, ShellCheck e parsing JSON c
 
 ---
 
-## 💻 PROJETOS E PORTFÓLIOS
-- **App Ecosystem:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
-- **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
+## 📬 CONTATOS E PERFIS
 
-## 🐙 CÓDIGO E REPOSITÓRIOS
-- **GitHub:** [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+💻 **PROJETOS E PORTFÓLIOS**
+* App Ecosystem / Dev Hub: [https://tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+* H-Folio Professional: [https://h-folio-I0.vercel.app](https://h-folio-I0.vercel.app)
 
-## ✍️ ARTIGOS E PUBLICAÇÕES
-- **Medium:** [medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
+🐙 **CÓDIGOS E REPOSITÓRIOS**
+* GitHub: [https://github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
 
-## 🪟 MICROSOFT LEARN
-- **Perfil:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
+✍️ **ARTIGOS E PUBLICAÇÕES**
+* Medium: [https://medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
+* Comunidade DEV: [https://dev.to/rafaeltozato](https://dev.to/rafaeltozato)
 
-## 📬 CONTATOS
-- **E-mail:** ornelas.tozato@gmail.com
-- **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
-- **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-- **Dev Hub:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+💼 **CONTATO**
+* LinkedIn: [https://www.linkedin.com/in/rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
+* E-mail: [ornelas.tozato@gmail.com](mailto:ornelas.tozato@gmail.com)
+* Microsoft Learn: [https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
