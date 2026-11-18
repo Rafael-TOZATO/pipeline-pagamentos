@@ -33,16 +33,10 @@ As verificações locais executadas foram `bash -n`, ShellCheck e parsing JSON c
 * Environment `desafio-final` + cluster Basic `desafio-basic` (aws/us-east-1)
 * Identidades: `desafio-producer` (WRITE em `desafio-*`), `desafio-consumer` (READ em `desafio-*` + grupo `desafio-*`); conta pessoal restrita a setup/teardown.
 
----
-
-**Rafael Ornelas Tozato**
-
-Engenharia Química | Garantia da Qualidade | Governança 4.0
-
 ## 📬 CONTATOS E PERFIS
 
 💻 **PROJETOS E PORTFÓLIOS**
-* Ecossistema de Aplicativos: [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+* Ecossistema de Aplicativo: [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
 * H-Folio Professional: [h-folio-I0.vercel.app](https://h-folio-I0.vercel.app)
 
 🐙 **CÓDIGOS E REPOSITÓRIOS**
