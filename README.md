@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner-pipeline-pagamentos.png" alt="Banner do Projeto Pipeline de Pagamentos Real-Time" width="100%">
+  <img src="banner-pipeline.svg" alt="Banner do Projeto Pipeline de Pagamentos Real-Time" width="100%">
 </p>
 
 <p align="center">
