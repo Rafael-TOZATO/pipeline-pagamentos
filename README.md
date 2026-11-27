@@ -59,5 +59,4 @@ As verificações locais executadas foram `bash -n`, ShellCheck e parsing JSON c
 
 📬 **CONTACT**
 * E-mail: ornelas.tozato@gmail.com
-* LinkedIn: [linkedin.com/in/rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
-* E-mail: ornelas.tozato@gmail.com
+  
